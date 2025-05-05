@@ -11,15 +11,15 @@ public class ScoreManager : MonoBehaviour
 {
 
     public TextMeshProUGUI[] FruitScoreCountText;
-    public int fruit_Count;
+    public int fruit_Count = 0;
 
     public TextMeshProUGUI[] OrbScoreCountText;
-    public int orb_Count;
+    public int orb_Count = 0;
 
     public TextMeshProUGUI[] HeartScoreCountText;
-    public int heart_Count;
+    public int heart_Count = 3;
 
-    public GameObject[] Orbs = new GameObject[3];
+    public GameObject[] Orbs = new GameObject[2];
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,10 +35,7 @@ public class ScoreManager : MonoBehaviour
 
         for (int index = 0; index < FruitScoreCountText.Length; index++) HeartScoreCountText[index].text = "Hearts: " + heart_Count;
 
-        switch (orb_Count)
-        {
-            case 3:
-                break;
-        }
+        if(orb_Count > 0) Orbs[orb_Count-1].SetActive(true);
+
     }
 }

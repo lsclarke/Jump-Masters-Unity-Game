@@ -22,12 +22,18 @@ public class Orb : MonoBehaviour
         {
             animator.SetBool("isCollected", true);
             transform.localScale = new Vector3(7, 7, 7);
+            Add();
         }
     }
 
     public void Add()
     {
-        score_manager.orb_Count++;
+        score_manager.orb_Count += 1;
+
+        if(score_manager.orb_Count > 3)
+        {
+            score_manager.orb_Count = 3;
+        }
     }
 
     public void DestroyObject()
