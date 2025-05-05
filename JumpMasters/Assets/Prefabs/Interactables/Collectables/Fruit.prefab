@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 6627952337317932489}
   - component: {fileID: 9042379826877971335}
   - component: {fileID: 9013154004563416953}
-  - component: {fileID: 6557713069571580673}
-  - component: {fileID: 1469835263330303324}
+  - component: {fileID: 5528669693741988996}
+  - component: {fileID: 7425387768487328030}
   m_Layer: 0
-  m_Name: 'Orb '
+  m_Name: Fruit
   m_TagString: Points
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.4172635, y: -2.1885517, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7358931438366152295}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayerID: 272716707
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -3983950619504736678, guid: 74f8b4d56cb24724abef2f7c526fd9ca, type: 3}
+  m_Sprite: {fileID: 7293598183456022363, guid: 1ddc9afd21fec77489b1248d18f31b68, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -136,9 +136,9 @@ SpringJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.67825705, y: 5.578711}
+  m_ConnectedAnchor: {x: -1.4220876, y: -0.24205747}
   m_AutoConfigureDistance: 1
-  m_Distance: 5.813843
+  m_Distance: 2.582637
   m_DampingRatio: 0
   m_Frequency: 1
 --- !u!58 &9013154004563416953
@@ -176,8 +176,8 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!95 &6557713069571580673
+  m_Radius: 0.01
+--- !u!95 &5528669693741988996
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ Animator:
   m_GameObject: {fileID: 2587154173112836931}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c943fcbc17eba40409e5629b4e87ccae, type: 2}
+  m_Controller: {fileID: 9100000, guid: ccaee66124a6272449ba16aef6db4b14, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -199,7 +199,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1469835263330303324
+--- !u!114 &7425387768487328030
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,13 +208,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2587154173112836931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a5a878cd6b20174abd9098498114d60, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e4eaba28722c20499371a57ccd44695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
   orb_light: {fileID: 5586792351377024968}
+  state: 2
 --- !u!1 &4863046883425259164
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +227,7 @@ GameObject:
   - component: {fileID: 7358931438366152295}
   - component: {fileID: 5586792351377024968}
   m_Layer: 0
-  m_Name: Orb Light 2D
+  m_Name: Fruit Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

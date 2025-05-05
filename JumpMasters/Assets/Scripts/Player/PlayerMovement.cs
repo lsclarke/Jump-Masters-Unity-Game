@@ -128,7 +128,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 continuedMovement -= 0.00001f;
                 physics.linearVelocity = new Vector2(continuedMovement, physics.linearVelocity.y);
-                print("Friction: " + continuedMovement);
             }
         }
         else
