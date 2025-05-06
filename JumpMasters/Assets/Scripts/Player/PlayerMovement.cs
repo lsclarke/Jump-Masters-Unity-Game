@@ -43,6 +43,10 @@ public class PlayerMovement : MonoBehaviour
     public float WallJumpCounter;
     public float WallJumpTime;
 
+    [Header("Music and SFX")]
+
+    public AudioSource audio;
+    public AudioClip[] SFX;
 
     public void PlayerDirection()
     {
