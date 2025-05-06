@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1939930284088681780}
   - component: {fileID: 3932221083903599789}
   - component: {fileID: 8851242856580007862}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ MonoBehaviour:
   linedistance: 1.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 192
   isWallSliding: 0
   canWallJump: 0
   wallCheckRadius: 0.55
@@ -152,6 +152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c70479be3aae3ce43bb60adcc8350b6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Health: 3
+  strength: 0
+  duration: 0
+  isKnockedBack: 0
+  TakeDamageFrom:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!1 &4043388336470686125
 GameObject:
   m_ObjectHideFlags: 0
@@ -163,7 +170,7 @@ GameObject:
   - component: {fileID: 4135762854500666902}
   - component: {fileID: 4146614910131350855}
   - component: {fileID: 1347065987321046302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Run Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5009,7 +5016,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 291879263
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
@@ -5053,7 +5060,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1781640340961299979}
   - component: {fileID: 5944056103822967347}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Particle Systems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5102,7 +5109,7 @@ GameObject:
   - component: {fileID: 5755521133154670362}
   - component: {fileID: 5974908429680548436}
   - component: {fileID: 1987122953665949818}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5165,7 +5172,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 291879263
+  m_SortingLayerID: 1439850577
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1363835404106015672, guid: cd947491a13509945aa1b644f9db3ef2, type: 3}

@@ -5,6 +5,7 @@ public class PlayerAnimation : MonoBehaviour
     public Rigidbody2D physics;
     public PlayerMovement movement_script;
     public Animator animator;
+    public PlayerHealth player_health;
 
     enum Anim_States
     {
@@ -22,6 +23,7 @@ public class PlayerAnimation : MonoBehaviour
     void Start()
     {
         movement_script = this.transform.parent.GetComponent<PlayerMovement>();
+        player_health = this.transform.parent.GetComponent<PlayerHealth>();
         physics = this.transform.parent.GetComponent<Rigidbody2D>();
         animator = this.GetComponent<Animator>();
     }
@@ -30,6 +32,8 @@ public class PlayerAnimation : MonoBehaviour
     void Update()
     {
         if (movement_script == null) return;
+
+        animator.SetBool("isHit", player_health.isKnockedBack);
 
         if (movement_script.grounded)
         {

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Points
   - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -49,6 +50,9 @@ TagManager:
   - name: Player
     uniqueID: 1439850577
     locked: 0
+  - name: Gate
+    uniqueID: 2791115677
+    locked: 0
   - name: Midground
     uniqueID: 272716707
     locked: 0
@@ -57,9 +61,6 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 1607374249
-    locked: 0
-  - name: Gate
-    uniqueID: 2791115677
     locked: 0
   m_RenderingLayers:
   - Default
