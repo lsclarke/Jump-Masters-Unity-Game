@@ -7,7 +7,7 @@ public class Fruit : MonoBehaviour
     public LayerMask playerLayer;
     private Collider2D collider;
     public Light2D orb_light;
-
+    public ScoreManager score_manager;
     public enum Anim_States
     {
         Apple = 1,
@@ -34,24 +34,21 @@ public class Fruit : MonoBehaviour
     {
         animator.SetInteger("FruitStates", (int)state);
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            animator.SetBool("isCollected", true);
-            transform.localScale = new Vector3(7, 7, 7);
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             animator.SetBool("isCollected", true);
             transform.localScale = new Vector3(7, 7, 7);
+            Invoke("Add",0.01f);
         }
     }
+
+    public void Add()
+    {
+        score_manager.fruit_Count += Random.Range(2,5);
+    }
+
     public void DestroyObject()
     {
         Destroy(this.gameObject);
