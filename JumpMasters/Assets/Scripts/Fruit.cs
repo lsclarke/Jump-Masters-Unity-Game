@@ -8,6 +8,7 @@ public class Fruit : MonoBehaviour
     private Collider2D collider;
     public Light2D orb_light;
     public ScoreManager score_manager;
+    private PlayerHealth player_Health;
     public enum Anim_States
     {
         Apple = 1,
@@ -38,6 +39,7 @@ public class Fruit : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            player_Health = collision.GetComponent<PlayerHealth>(); 
             animator.SetBool("isCollected", true);
             transform.localScale = new Vector3(7, 7, 7);
             Invoke("Add",0.01f);
@@ -47,6 +49,8 @@ public class Fruit : MonoBehaviour
     public void Add()
     {
         score_manager.fruit_Count += Random.Range(2,5);
+
+        if (score_manager.fruit_Count >= 25) player_Health.Health += 1;
     }
 
     public void DestroyObject()

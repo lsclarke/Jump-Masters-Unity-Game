@@ -20,14 +20,19 @@ public class ScoreManager : MonoBehaviour
     public int orb_Count = 0;
 
     public TextMeshProUGUI[] HeartScoreCountText;
-    private int heart_Count;
+    public int heart_Count;
 
     public GameObject[] Orbs = new GameObject[3];
     public GameObject[] Hearts = new GameObject[3];
 
     public PlayerHealth player_health;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public int getHeart()
+    {
+        return heart_Count;
+    }
+
+    private void Start()
     {
         
     }
@@ -44,7 +49,7 @@ public class ScoreManager : MonoBehaviour
 
         if (orb_Count > 0) Orbs[orb_Count-1].SetActive(true);
 
-
+        if (player_health.Health > 3) player_health.Health = 3;
 
         heart_Count = player_health.Health;
 

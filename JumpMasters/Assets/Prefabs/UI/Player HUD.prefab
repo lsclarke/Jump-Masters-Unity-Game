@@ -146,6 +146,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5679266543834721889}
   - component: {fileID: 3748494913214717957}
+  - component: {fileID: 5060691120794382702}
   m_Layer: 5
   m_Name: Player HUD
   m_TagString: Untagged
@@ -192,6 +193,8 @@ MonoBehaviour:
   - {fileID: 7445745156843280823}
   - {fileID: 2848942530272167489}
   fruit_Count: 0
+  TimerCountText: []
+  time_script: {fileID: 0}
   OrbScoreCountText:
   - {fileID: 4120328854507050148}
   - {fileID: 5772190652052304503}
@@ -208,6 +211,19 @@ MonoBehaviour:
   - {fileID: 4925763538514705094}
   - {fileID: 8631789456822185959}
   player_health: {fileID: 0}
+--- !u!114 &5060691120794382702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828855060325296206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 701f7a987daf011459bdefefca333501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lose_screen: {fileID: 0}
 --- !u!1 &878767373023731963
 GameObject:
   m_ObjectHideFlags: 0

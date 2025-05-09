@@ -29,9 +29,10 @@ public class PlayerHealth : MonoBehaviour
         movement.physics.AddForce(direction * strength, ForceMode2D.Impulse);
         StartCoroutine(StopKnockBack(duration));
 
-        if (Health < 1)
+        if (Health <= 0)
         {
             DeathScreen.SetActive(true);
+            Destroy(this.gameObject);
         }
     }
     public IEnumerator StopKnockBack(float time)
