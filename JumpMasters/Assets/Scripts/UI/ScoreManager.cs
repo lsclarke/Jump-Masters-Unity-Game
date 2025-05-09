@@ -13,9 +13,6 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI[] FruitScoreCountText;
     public int fruit_Count = 0;
 
-    public TextMeshProUGUI[] TimerCountText;
-    public Timer time_script;
-
     public TextMeshProUGUI[] OrbScoreCountText;
     public int orb_Count = 0;
 
@@ -26,15 +23,12 @@ public class ScoreManager : MonoBehaviour
     public GameObject[] Hearts = new GameObject[3];
 
     public PlayerHealth player_health;
+
+    public Timer clock;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public int getHeart()
     {
         return heart_Count;
-    }
-
-    private void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -58,6 +52,8 @@ public class ScoreManager : MonoBehaviour
             Hearts[0].SetActive(false);
             Hearts[1].SetActive(false);
             Hearts[2].SetActive(false);
+
+            clock.StopTimer();
         }
 
         if (heart_Count == 1)
