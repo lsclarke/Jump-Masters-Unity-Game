@@ -13,6 +13,9 @@ public class ScoreManager : MonoBehaviour
     public TextMeshProUGUI[] FruitScoreCountText;
     public int fruit_Count = 0;
 
+    public TextMeshProUGUI[] TimerCountText;
+    public Timer time_script;
+
     public TextMeshProUGUI[] OrbScoreCountText;
     public int orb_Count = 0;
 
@@ -38,7 +41,10 @@ public class ScoreManager : MonoBehaviour
 
         for (int index = 0; index < FruitScoreCountText.Length; index++) HeartScoreCountText[index].text = "Hearts: " + heart_Count;
 
-        if(orb_Count > 0) Orbs[orb_Count-1].SetActive(true);
+
+        if (orb_Count > 0) Orbs[orb_Count-1].SetActive(true);
+
+
 
         heart_Count = player_health.Health;
 

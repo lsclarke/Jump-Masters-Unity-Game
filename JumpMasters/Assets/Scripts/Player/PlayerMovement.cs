@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -48,6 +49,7 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource audio;
     public AudioClip[] SFX;
 
+    private PlayerRailGrind rail;
     public void PlayerDirection()
     {
         facingRight = !facingRight;
@@ -104,7 +106,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.DrawRay(transform.position, Vector2.down * linedistance, Color.red);
         grounded = Physics2D.Raycast(transform.position, Vector2.down, linedistance, groundLayer);
-       
+        rail = this.gameObject.GetComponent<PlayerRailGrind>();
         if (grounded)
         {
             canJump = true;
@@ -127,7 +129,6 @@ public class PlayerMovement : MonoBehaviour
         if (PlayerInput.x.Equals(0) & grounded)
         {
             float continuedMovement = PlayerInput.x * MoveSpeed;
-
             if (Mathf.Abs(physics.linearVelocity.x) > 0)
             {
                 continuedMovement -= 0.00001f;
@@ -159,8 +160,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlayerJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (Input.GetKeyDown(KeyCode.Space) && canJump)
         {
+            rail = this.gameObject.GetComponent<PlayerRailGrind>();
             physics.AddForce(Vector2.up * JumpSpeed, ForceMode2D.Impulse);
             isJumping = true;
         }
@@ -199,6 +201,11 @@ public class PlayerMovement : MonoBehaviour
         PlayerJump();
         OnGround();
         IsOnWall();
+    }
+
+    public void Update()
+    {
+
     }
 
     private void OnDrawGizmos()

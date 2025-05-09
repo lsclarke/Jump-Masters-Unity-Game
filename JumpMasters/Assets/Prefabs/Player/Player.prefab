@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3598704201224235519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3428118507152894297}
+  m_Layer: 8
+  m_Name: RailPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3428118507152894297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3598704201224235519}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.889, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5773515063502574548}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3872540421715945182
 GameObject:
   m_ObjectHideFlags: 0
@@ -35,6 +66,7 @@ Transform:
   m_Children:
   - {fileID: 5897199929753421404}
   - {fileID: 1781640340961299979}
+  - {fileID: 3428118507152894297}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &4368225644204541152
@@ -126,7 +158,7 @@ MonoBehaviour:
   linedistance: 1.1
   groundLayer:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 128
   isWallSliding: 0
   canWallJump: 0
   wallCheckRadius: 0.55
@@ -140,6 +172,8 @@ MonoBehaviour:
   WallJumpDuration: 0.4
   WallJumpCounter: 0
   WallJumpTime: 3
+  audio: {fileID: 0}
+  SFX: []
 --- !u!114 &8851242856580007862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,9 +190,6 @@ MonoBehaviour:
   strength: 0
   duration: 0
   isKnockedBack: 0
-  TakeDamageFrom:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!1 &4043388336470686125
 GameObject:
   m_ObjectHideFlags: 0
@@ -5223,3 +5254,4 @@ MonoBehaviour:
   physics: {fileID: 0}
   movement_script: {fileID: 0}
   animator: {fileID: 0}
+  player_health: {fileID: 0}
