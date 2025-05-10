@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Rendering.Universal;
 
 public class Orb : MonoBehaviour
@@ -8,6 +9,7 @@ public class Orb : MonoBehaviour
     private Collider2D collider;
     public Light2D orb_light;
     public ScoreManager score_manager;
+    public AudioSource audio_source;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +24,7 @@ public class Orb : MonoBehaviour
         {
             animator.SetBool("isCollected", true);
             transform.localScale = new Vector3(7, 7, 7);
+            audio_source.Play();
             Add();
         }
     }

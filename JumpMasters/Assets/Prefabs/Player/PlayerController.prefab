@@ -57,6 +57,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3932221083903599789, guid: 1582ba9f1bdd74841b063dc922969adf, type: 3}
+      propertyPath: SFX.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3932221083903599789, guid: 1582ba9f1bdd74841b063dc922969adf, type: 3}
+      propertyPath: 'SFX.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
+    - target: {fileID: 3932221083903599789, guid: 1582ba9f1bdd74841b063dc922969adf, type: 3}
+      propertyPath: 'SFX.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0994c12e202f342459a4212e7287f7e8, type: 3}
+    - target: {fileID: 3932221083903599789, guid: 1582ba9f1bdd74841b063dc922969adf, type: 3}
       propertyPath: groundLayer.m_Bits
       value: 128
       objectReference: {fileID: 0}
@@ -103,43 +115,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3872540421715945182, guid: 1582ba9f1bdd74841b063dc922969adf, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4215704680055636740}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1582ba9f1bdd74841b063dc922969adf, type: 3}
---- !u!1 &2608586838370664520 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3872540421715945182, guid: 1582ba9f1bdd74841b063dc922969adf, type: 3}
-  m_PrefabInstance: {fileID: 1264817799762519702}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4215704680055636740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2608586838370664520}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04fdd7c951847ee44a08e55f2feeb2ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RailPath: {fileID: 0}
-  speed: 3
-  RaildistancePercent: 0
-  linedistance: 0.8
-  RailLayer:
-    serializedVersion: 2
-    m_Bits: 4096
-  FeetToRail: {fileID: 4476180594382196687}
-  Offset: 0.75
-  direction: {x: 0, y: 0}
---- !u!4 &4476180594382196687 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3428118507152894297, guid: 1582ba9f1bdd74841b063dc922969adf, type: 3}
-  m_PrefabInstance: {fileID: 1264817799762519702}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4724887655624455490 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5773515063502574548, guid: 1582ba9f1bdd74841b063dc922969adf, type: 3}

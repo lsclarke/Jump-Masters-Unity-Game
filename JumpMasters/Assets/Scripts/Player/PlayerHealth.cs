@@ -14,6 +14,8 @@ public class PlayerHealth : MonoBehaviour
     [HideInInspector] public bool isKnockedBack = false;
 
     public GameObject DeathScreen;
+
+    public AudioSource audio;
     private void Start()
     {
         movement = this.GetComponent<PlayerMovement>();
@@ -28,7 +30,7 @@ public class PlayerHealth : MonoBehaviour
         Vector2 direction = (transform.position - other.transform.position).normalized;
         movement.physics.AddForce(direction * strength, ForceMode2D.Impulse);
         StartCoroutine(StopKnockBack(duration));
-
+        
         if (Health <= 0)
         {
             DeathScreen.SetActive(true);
@@ -51,6 +53,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("TAKE DAMAGE - Tag (trigger)");
             TakeDamage(collision.gameObject);
+            audio.Play();
         }
     }
 }

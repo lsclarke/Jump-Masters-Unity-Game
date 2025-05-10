@@ -115,6 +115,38 @@ public class PlayerMovement : MonoBehaviour
             canWallJump = false;
             isWallSliding = false;
             isWallJumping = false;
+
+            //ground sounds
+            if(physics.linearVelocityX > 0.1f)
+            {
+                int randomInt = Random.Range(0, 2);
+                if (randomInt > 1)
+                {
+                    audio.clip = SFX[2];
+                    audio.PlayOneShot(audio.clip);
+                }
+                else
+                {
+                    audio.clip = SFX[3];
+                    audio.PlayOneShot(audio.clip);
+                }
+            }
+            if (physics.linearVelocityX < 0.0f)
+            {
+                int randomInt = Random.Range(0, 2);
+                if (randomInt > 1)
+                {
+                    audio.clip = SFX[2];
+                    audio.PlayOneShot(audio.clip);
+                }
+                else
+                {
+                    audio.clip = SFX[3];
+                    audio.PlayOneShot(audio.clip);
+                }
+            }
+
+
         }
         else
         {
@@ -166,6 +198,20 @@ public class PlayerMovement : MonoBehaviour
             rail = this.gameObject.GetComponent<PlayerRailGrind>();
             physics.AddForce(Vector2.up * JumpSpeed, ForceMode2D.Impulse);
             isJumping = true;
+
+            //Jump Audio
+            audio.Play();
+            int randomInt = Random.Range(0, 2);
+            if (randomInt > 1)
+            {
+                audio.clip = SFX[1];
+            }
+            else
+            {
+                audio.clip = SFX[0];
+            }
+
+            
         }
 
         PlayerWallJump();
@@ -181,6 +227,18 @@ public class PlayerMovement : MonoBehaviour
                 canWallJump = false;
                 isWallJumping = true;
                 WallJumpCounter = 0;
+
+                //Jump Audio
+                audio.Play();
+                int randomInt = Random.Range(0, 2);
+                if (randomInt > 1)
+                {
+                    audio.clip = SFX[1];
+                }
+                else
+                {
+                    audio.clip = SFX[0];
+                }
 
                 if (transform.localScale.x != WallJumpDirection.x)
                 {

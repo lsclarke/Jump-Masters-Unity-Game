@@ -14,6 +14,7 @@ public class Gate : MonoBehaviour
     public GameObject HighScore_Screen;
     public PlayerMovement movement;
 
+    public AudioSource audio;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -29,6 +30,7 @@ public class Gate : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 movement.enabled = false;
+                audio.Play();
                 HighScore_Screen.SetActive(true);
             }
         }

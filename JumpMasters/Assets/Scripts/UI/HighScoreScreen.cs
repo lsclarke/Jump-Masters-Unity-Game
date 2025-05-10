@@ -6,6 +6,7 @@ using UnityEditor;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using TMPro;
+using UnityEngine.Audio;
 public class HighScoreScreen : MonoBehaviour
 {
     public ScoreManager scoreManager;
@@ -31,5 +32,15 @@ public class HighScoreScreen : MonoBehaviour
         for (int index = 0; index < FruitScoreCountText.Length; index++) HeartScoreCountText[index].text = "Hearts: " + scoreManager.heart_Count;
 
         for (int index = 0; index < TimerCountText.Length; index++) TimerCountText[index].text = ": " + time_script.seconds;
+    }
+
+    public void Continue()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Quit()
+    {
+        SceneManager.LoadScene(0);
     }
 }

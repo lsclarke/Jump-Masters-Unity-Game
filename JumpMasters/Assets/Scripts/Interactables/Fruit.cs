@@ -9,6 +9,7 @@ public class Fruit : MonoBehaviour
     public Light2D orb_light;
     public ScoreManager score_manager;
     private PlayerHealth player_Health;
+    public AudioSource audio_source;
     public enum Anim_States
     {
         Apple = 1,
@@ -41,6 +42,7 @@ public class Fruit : MonoBehaviour
         {
             player_Health = collision.GetComponent<PlayerHealth>(); 
             animator.SetBool("isCollected", true);
+            audio_source.Play();
             transform.localScale = new Vector3(7, 7, 7);
             Invoke("Add",0.01f);
         }

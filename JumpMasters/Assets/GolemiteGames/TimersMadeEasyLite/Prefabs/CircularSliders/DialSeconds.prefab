@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 05
+  m_Text: 16
 --- !u!1 &8882726664330202840
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5779841, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -246,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8882726665517792976
 RectTransform:
   m_ObjectHideFlags: 0
@@ -256,8 +256,8 @@ RectTransform:
   m_GameObject: {fileID: 8882726665517792977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8882726665225064478}
   - {fileID: 8882726664330202855}
@@ -286,10 +286,10 @@ MonoBehaviour:
       m_Calls: []
   hours: 0
   minutes: 0
-  seconds: 5
+  seconds: 16
   startAtRuntime: 1
-  hoursDisplay: 1
-  minutesDisplay: 1
+  hoursDisplay: 0
+  minutesDisplay: 0
   secondsDisplay: 1
   countMethod: 0
   outputType: 1
@@ -297,7 +297,7 @@ MonoBehaviour:
   textMeshProText: {fileID: 0}
   standardSlider: {fileID: 0}
   dialSlider: {fileID: 8882726664330202853}
-  timeRemaining: 5
+  timeRemaining: 16
 --- !u!114 &2317260506900098015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,3 +313,4 @@ MonoBehaviour:
   lose_screen: {fileID: 0}
   player: {fileID: 0}
   player_move: {fileID: 0}
+  audioSource: {fileID: 0}
