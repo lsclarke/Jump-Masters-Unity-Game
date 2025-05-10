@@ -19,6 +19,7 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         movement = this.GetComponent<PlayerMovement>();
+        Health = 3;
     }
 
     public void TakeDamage(GameObject other)

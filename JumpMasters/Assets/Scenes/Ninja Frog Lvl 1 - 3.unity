@@ -43407,6 +43407,10 @@ PrefabInstance:
       value: 111.75
       objectReference: {fileID: 0}
     - target: {fileID: 3748494913214717957, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
+      propertyPath: heart_Count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748494913214717957, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
       propertyPath: player_health
       value: 
       objectReference: {fileID: 761742533}

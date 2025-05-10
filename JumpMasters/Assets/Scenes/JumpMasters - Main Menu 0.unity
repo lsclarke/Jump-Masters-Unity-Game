@@ -219,8 +219,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 952625107}
-  - {fileID: 1079166431}
   - {fileID: 6210137943628917874}
+  - {fileID: 1079166431}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3312,6 +3312,10 @@ PrefabInstance:
       value: LevelTransitionHUD
       objectReference: {fileID: 0}
     - target: {fileID: 5994463108317330597, guid: 7f8d05558c7c98d49b192288bdb93d1e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7436298822402803510, guid: 7f8d05558c7c98d49b192288bdb93d1e, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}

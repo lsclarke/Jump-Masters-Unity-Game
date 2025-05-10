@@ -212,7 +212,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      itch-io-icon-2048x2048-i6hzclad_0: -1209462612725333855
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -116,36 +116,6 @@ public class PlayerMovement : MonoBehaviour
             isWallSliding = false;
             isWallJumping = false;
 
-            //ground sounds
-            if(physics.linearVelocityX > 0.1f)
-            {
-                int randomInt = Random.Range(0, 2);
-                if (randomInt > 1)
-                {
-                    audio.clip = SFX[2];
-                    audio.PlayOneShot(audio.clip);
-                }
-                else
-                {
-                    audio.clip = SFX[3];
-                    audio.PlayOneShot(audio.clip);
-                }
-            }
-            if (physics.linearVelocityX < 0.0f)
-            {
-                int randomInt = Random.Range(0, 2);
-                if (randomInt > 1)
-                {
-                    audio.clip = SFX[2];
-                    audio.PlayOneShot(audio.clip);
-                }
-                else
-                {
-                    audio.clip = SFX[3];
-                    audio.PlayOneShot(audio.clip);
-                }
-            }
-
 
         }
         else
