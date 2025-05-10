@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ninja Frog Lvl 1 - 4.unity
     guid: 7f5b63c4c844af24c974da961b6e6563
+  - enabled: 1
+    path: Assets/Scenes/JumpMaster - Credits 5.unity
+    guid: 04576fe35fe456b4393ea3ae252a0ede
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

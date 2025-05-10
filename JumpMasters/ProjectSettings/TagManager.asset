@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Enemy
   - StopCameraFollow
+  - PassThrough
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Key
   - Interactable
   - Rail
-  - CanPassThrough
+  - PassThrough
   - 
   - 
   - 

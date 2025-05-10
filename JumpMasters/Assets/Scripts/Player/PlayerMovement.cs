@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerRailGrind rail;
     public void PlayerDirection()
     {
+        //Flip Sprite
         facingRight = !facingRight;
         Vector3 localScale = transform.localScale;
         localScale.x *= -1f;
@@ -60,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlayerDirectionalChange()
     {
+        //If moving right flip sprite to the right, if moving left flip sprite to the left
         if (physics.linearVelocity.x < -0.01f && !facingRight && !isWallJumping)
         {
             PlayerDirection();
@@ -89,7 +91,6 @@ public class PlayerMovement : MonoBehaviour
                 WallJumpCounter = WallJumpTime;
                 physics.linearVelocity = new Vector2(physics.linearVelocityX, Mathf.Clamp(physics.linearVelocityY, -wallSlideSpeed, float.MaxValue));
 
-               // CancelInvoke(nameof(StopWallJump));
             }
             else
             {
@@ -201,11 +202,6 @@ public class PlayerMovement : MonoBehaviour
         PlayerJump();
         OnGround();
         IsOnWall();
-    }
-
-    public void Update()
-    {
-
     }
 
     private void OnDrawGizmos()
