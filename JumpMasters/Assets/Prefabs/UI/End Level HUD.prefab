@@ -441,11 +441,9 @@ MonoBehaviour:
   HeartScoreCountText:
   - {fileID: 7546100711513756483}
   - {fileID: 5660570150123400588}
-  heart_Count: 0
   FruitScoreCountText:
   - {fileID: 5058287284372535037}
   - {fileID: 2065174163878604020}
-  fruit_Count: 0
   TimerCountText:
   - {fileID: 4259311929064928485}
   - {fileID: 3632060122500208332}

@@ -40,7 +40,6 @@ public class PlayerAnimation : MonoBehaviour
             if (Mathf.Abs(movement_script.Direction().x) > 0f)
             {
                 state = Anim_States.Moving;
-                Debug.Log(state);
             }
             else if (physics.linearVelocityX == 0) state = Anim_States.Idle;
         }

@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - StopCameraFollow
   - PassThrough
+  - Rail
   layers:
   - Default
   - TransparentFX

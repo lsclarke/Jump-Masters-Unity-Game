@@ -1054,7 +1054,7 @@ PrefabInstance:
     - target: {fileID: 7685436009564230797, guid: b5453faf6624f1642847916643338c47, type: 3}
       propertyPath: time_script
       value: 
-      objectReference: {fileID: 4172840083435170350}
+      objectReference: {fileID: 0}
     - target: {fileID: 7685436009564230797, guid: b5453faf6624f1642847916643338c47, type: 3}
       propertyPath: scoreManager
       value: 
@@ -16292,7 +16292,7 @@ PrefabInstance:
     - target: {fileID: 3748494913214717957, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
       propertyPath: clock
       value: 
-      objectReference: {fileID: 4172840083435170350}
+      objectReference: {fileID: 0}
     - target: {fileID: 3748494913214717957, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
       propertyPath: heart_Count
       value: 3
@@ -16486,21 +16486,11 @@ PrefabInstance:
       value: -63.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8907008647265863808, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
---- !u!114 &4172840083435170350 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2027346054792310217, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
-  m_PrefabInstance: {fileID: 4172840083435170349}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ae392df589f1e8439316f88b61b2776, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4354124931473979521
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16613,7 +16603,7 @@ PrefabInstance:
     - target: {fileID: 659887082270552622, guid: f2c9a1c9acff6724cac7c6a3cd80acb9, type: 3}
       propertyPath: time_script
       value: 
-      objectReference: {fileID: 4172840083435170350}
+      objectReference: {fileID: 0}
     - target: {fileID: 659887082270552622, guid: f2c9a1c9acff6724cac7c6a3cd80acb9, type: 3}
       propertyPath: scoreManager
       value: 

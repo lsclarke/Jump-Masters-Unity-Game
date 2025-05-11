@@ -27,11 +27,13 @@ public class Gate : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            if (Input.GetKey(KeyCode.E))
+            int count = 0;
+            if (Input.GetKey(KeyCode.E) && movement.OnGround() && count < 1)
             {
                 movement.enabled = false;
                 audio.Play();
                 HighScore_Screen.SetActive(true);
+                count++;
             }
         }
     }

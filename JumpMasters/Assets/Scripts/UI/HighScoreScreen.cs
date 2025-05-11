@@ -29,7 +29,7 @@ public class HighScoreScreen : MonoBehaviour
     {
         for (int index = 0; index < FruitScoreCountText.Length; index++) FruitScoreCountText[index].text = ": " + scoreManager.fruit_Count;
 
-        for (int index = 0; index < FruitScoreCountText.Length; index++) HeartScoreCountText[index].text = "Hearts: " + scoreManager.heart_Count;
+        for (int index = 0; index < FruitScoreCountText.Length; index++) HeartScoreCountText[index].text = ": " + scoreManager.heart_Count;
 
         for (int index = 0; index < TimerCountText.Length; index++) TimerCountText[index].text = ": " + time_script.seconds;
     }

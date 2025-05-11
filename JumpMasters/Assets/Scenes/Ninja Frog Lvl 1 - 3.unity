@@ -12476,8 +12476,16 @@ PrefabInstance:
       value: StopCameraFollowTrigger (2)
       objectReference: {fileID: 0}
     - target: {fileID: 5834428794548020836, guid: d843fb9c129039b48bc910f75dd99574, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2590473
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834428794548020836, guid: d843fb9c129039b48bc910f75dd99574, type: 3}
       propertyPath: m_Size.y
       value: 0.63491184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5834428794548020836, guid: d843fb9c129039b48bc910f75dd99574, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.12952375
       objectReference: {fileID: 0}
     - target: {fileID: 5834428794548020836, guid: d843fb9c129039b48bc910f75dd99574, type: 3}
       propertyPath: m_Offset.y
@@ -43386,6 +43394,34 @@ PrefabInstance:
       propertyPath: secondsDisplay
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2027346054792310217, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027346054792310217, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027346054792310217, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4172840083435170351}
+    - target: {fileID: 2027346054792310217, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027346054792310217, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027346054792310217, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: OnTimerEnd, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2027346054792310217, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
+      propertyPath: onTimerEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2373772890125163918, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
       propertyPath: player
       value: 
@@ -43406,6 +43442,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 111.75
       objectReference: {fileID: 0}
+    - target: {fileID: 3748494913214717957, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
+      propertyPath: clock
+      value: 
+      objectReference: {fileID: 4172840083435170350}
     - target: {fileID: 3748494913214717957, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
       propertyPath: heart_Count
       value: 3
@@ -43596,6 +43636,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ae392df589f1e8439316f88b61b2776, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4172840083435170351 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2373772890125163918, guid: ad984d7d9472a9d4fa82964e7f3ae737, type: 3}
+  m_PrefabInstance: {fileID: 4172840083435170349}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 701f7a987daf011459bdefefca333501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!82 &4172840083435170352 stripped

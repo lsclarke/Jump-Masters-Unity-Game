@@ -49,7 +49,6 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource audio;
     public AudioClip[] SFX;
 
-    private PlayerRailGrind rail;
     public void PlayerDirection()
     {
         //Flip Sprite
@@ -105,9 +104,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public bool OnGround()
     {
-        Debug.DrawRay(transform.position, Vector2.down * linedistance, Color.red);
         grounded = Physics2D.Raycast(transform.position, Vector2.down, linedistance, groundLayer);
-        rail = this.gameObject.GetComponent<PlayerRailGrind>();
         if (grounded)
         {
             canJump = true;
@@ -115,8 +112,6 @@ public class PlayerMovement : MonoBehaviour
             canWallJump = false;
             isWallSliding = false;
             isWallJumping = false;
-
-
         }
         else
         {
@@ -165,7 +160,6 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && canJump)
         {
-            rail = this.gameObject.GetComponent<PlayerRailGrind>();
             physics.AddForce(Vector2.up * JumpSpeed, ForceMode2D.Impulse);
             isJumping = true;
 
@@ -232,8 +226,4 @@ public class PlayerMovement : MonoBehaviour
         IsOnWall();
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(transform.position, wallCheckRadius);
-    }
 }
