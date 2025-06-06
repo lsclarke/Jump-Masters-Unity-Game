@@ -18,5 +18,6 @@ Jump Masters:
 - Frog Ninjas Ability: Wall Jump
   - Frog Ninja can stick to walls and perform jumps to help get to trick platforms and when players are in a pinch to avoid bottomless pit falls aka game over.
 
+
 ![Screenshot 2025-06-05 105755](https://github.com/user-attachments/assets/486179e7-5d08-4609-9bb8-eabd545e8a07)
 ![Screenshot 2025-06-05 105841](https://github.com/user-attachments/assets/18df8e4a-2cc9-487e-80d0-08b03903bf29)
