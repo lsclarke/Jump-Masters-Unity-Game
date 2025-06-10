@@ -13,7 +13,7 @@ This useds the free Pixel Adventure Pack 1 that you can find on Pixel-Frogs Itch
 -----------------------------------------------------------------------------------------------------------------
 Game Detail: 
 -----------------------------------------------------------------------------------------------------------------
-Play as the Jump Masters! Beings with incredible abilities and skills that allow them to perform incredible feits! Obtain 3 orbs to unlock the each stage as you play through the leves you'll find obsticles enemies and bottomless pits you must make yor way across. There are 4 playable characters to choose from and each one has their own unique ability for beating a level. So far for right now there is only 1 playable character, Jump Master: Frog Ninja but there will more masters on the way in the future.
+​Play as the Jump Masters! Beings with incredible abilities and skills that allow them to perform incredible feats! Obtain 3 orbs to unlock the each stage as you play through the levels you'll find obstacles enemies and bottomless pits you must make your way across. There are 4 playable characters to choose from and each one has their own unique ability for beating a level. So far for right now there is only 1 playable character, Jump Master: Frog Ninja, but there will more masters on the way in the future!
 
 Jump Masters:
 - Frog Ninjas Ability: Wall Jump
