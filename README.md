@@ -9,7 +9,7 @@ Here is my **Unity Engine 6** project I have been working on called for over a m
 - Source Control: Github
 - Other Resources: Unity Asset Store
 
-This useds the free Pixel Adventure Pack 1 that you can find on Pixel-Frogs Itch Page : https://pixelfrog-assets.itch.io/pixel-adventure-1
+This used the free Pixel Adventure Pack 1 that you can find on Pixel-Frogs Itch Page : https://pixelfrog-assets.itch.io/pixel-adventure-1
 -----------------------------------------------------------------------------------------------------------------
 Game Detail: 
 -----------------------------------------------------------------------------------------------------------------
