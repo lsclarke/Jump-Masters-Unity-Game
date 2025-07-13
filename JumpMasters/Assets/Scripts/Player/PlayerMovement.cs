@@ -14,6 +14,28 @@ public class PlayerMovement : MonoBehaviour
     public float Acceleration;
     public float Decceleration;
 
+    [Header("Slope Detection")]
+
+    [SerializeField]
+    private float slopeCheckDistance;
+
+    private float originalSlopeCheckDistance;
+
+    private float slopeDownAngle;
+
+    private float slopeDownAngleOld;
+
+    private float slopeSideAngle;
+
+    private Vector2 slopeNormalPerp;
+
+    private Vector2 colliderSize;
+
+    private Vector2 newVelocity;
+
+    [SerializeField]
+    private bool isOnSlope;
+
     [Header("Jump")]
     public bool canJump;
     public bool isJumping;
@@ -119,6 +141,69 @@ public class PlayerMovement : MonoBehaviour
         }
 
             return grounded;
+    }
+
+    private void SlopeCheck()
+    {
+        Vector2 checkPos = transform.position - new Vector3(0.0f, colliderSize.y / 2);
+        SlopeCheckVertical(checkPos);
+        SlopeCheckHorizontal(checkPos);
+    }
+
+    private void SlopeCheckHorizontal(Vector2 checkPos)
+    {
+        RaycastHit2D slopeHitFront = Physics2D.Raycast(checkPos, transform.right, 0.25f, groundLayer);
+        RaycastHit2D slopeHitBack = Physics2D.Raycast(checkPos, -transform.right, 0.25f , groundLayer);
+
+        if (slopeHitFront)
+        {
+            isOnSlope = true;
+            slopeSideAngle = Vector2.Angle(slopeHitFront.normal, Vector2.up);
+        }
+        else if (slopeHitBack)
+        {
+            isOnSlope = true;
+            slopeSideAngle = Vector2.Angle(slopeHitBack.normal, Vector2.up);
+        }
+        else
+        {
+            slopeSideAngle = 0.0f;
+            isOnSlope = false;
+        }
+
+    }
+
+    private void SlopeCheckVertical(Vector2 checkPos)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, slopeCheckDistance, groundLayer);
+
+        if (hit)
+        {
+            Vector2 originalNormal = Vector2.Perpendicular(new Vector2(-1.00f,0.00f));
+
+            slopeNormalPerp = Vector2.Perpendicular(hit.normal);
+
+            slopeDownAngle = Vector2.Angle(hit.normal, Vector2.up);
+
+            while (slopeDownAngle != slopeDownAngleOld)
+            {
+                isOnSlope = true;
+                break;
+            }
+            slopeDownAngleOld = slopeDownAngle;
+
+            while (slopeDownAngle == 0)
+            {
+                isOnSlope = false;
+                break;
+            }
+
+
+                Debug.DrawRay(hit.point, slopeNormalPerp, Color.red);
+
+            Debug.DrawRay(hit.point, hit.normal, Color.green);
+        }
+
     }
 
 
