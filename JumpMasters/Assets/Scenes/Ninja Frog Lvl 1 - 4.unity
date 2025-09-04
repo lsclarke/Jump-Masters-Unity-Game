@@ -1489,7 +1489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &314936202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4135,6 +4135,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 734702060}
     m_Modifications:
+    - target: {fileID: 3547295453007234955, guid: c38ebf3ee32c2f84592b1d01eb5266e3, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3560831389119555135, guid: c38ebf3ee32c2f84592b1d01eb5266e3, type: 3}
       propertyPath: m_Name
       value: Saw
@@ -30862,6 +30866,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 734702060}
     m_Modifications:
+    - target: {fileID: 3547295453007234955, guid: c38ebf3ee32c2f84592b1d01eb5266e3, type: 3}
+      propertyPath: speed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3560831389119555135, guid: c38ebf3ee32c2f84592b1d01eb5266e3, type: 3}
       propertyPath: m_Name
       value: Saw
