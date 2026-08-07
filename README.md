@@ -22,3 +22,9 @@
 <p dir="auto">Traps designs were developed by implementing and utilizing the <strong><code>spline component</code></strong> into the designs of my traps. This provided the project with multiple saw trap variations that made platforming more exciting and challenging for players. The splines act as a <strong><code>path</code></strong> for the saws to follow and in doing so allows for a more optimized way of moving objects within a 2D space without the use of waypoints.</p>
 <br>
 <p dir="auto">The sprite animations provided the project with great visual impact that allows players to see the different states the player is in. By designing sprite animation logic the player is more visually appealing and can be easily identified as to when the player is in different health conditions, or on the move, or stationary.</p>
+<br>
+
+<h3 align="left" dir="auto"> UI Programming </h3>
+<p dir="auto">Developing an in-game user interface that provided the project with a visual indicator of the amount of points accumulated and collectables collected. 
+  By design the player ui logic the game keeps real time updates on the points collected and fruits and orbs collected throughout the level for the players to see at all times.</p>
+<br>
