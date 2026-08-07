@@ -12,6 +12,8 @@
 <p dir="auto">Here is my Unity Engine 6 project I have been working on called Jump Masters for over a month, Jump Masters! This was a little challenge for myself because I wanted to see how fast I can make a playable game within a short period of time. After developing and design the core game mechanics and systems. I then went on to look for aesthetically pleasing assets to help make the game look fun and interesting to play. All assets were taken from the unity asset store, but the beck-end development was all done by my in visual studio using C#. I had a lot of fun developing this project because it is a simple and straight forward platformer with the main focus of the game encouraging the player to get to the end of the goal. The game for right now has a end credits but I plan on adding more characters with different abilities depending on which character the player chooses. Its still in development and I plan on showcasing more in the future.</p>
 <br>
 
+<img width="800" height="450" alt="ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/e4163c38-fcf0-4359-a0ef-462bb00fa302" />
+
 
 <h2 align="center" dir="auto"> Feature </h2>
 <h3 align="left" dir="auto"> Gameplay Programming </h3>
