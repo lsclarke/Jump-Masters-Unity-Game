@@ -15,5 +15,5 @@
 
 <h2 align="center" dir="auto"> Feature </h2>
 <h3 align="left" dir="auto"> **Player Movement** </h3>
-<p dir="auto">**Player movement** is designed to allow the player to move **horizontally on the x axis**. Utilizing the <strong>**rigidbody2D component**</strong> within the unity engine I crafted a player movement that can be molded to be more specialized depending on what character you are. The wall jumping game mechanic is a feature only accessible to the Ninja Frog <strong><code>Jump Master</code></strong>.</p>
+<p dir="auto">**Player movement** is designed to allow the player to move **horizontally on the x axis**. Utilizing the <strong>rigidbody2D component</strong> within the unity engine I crafted a player movement that can be molded to be more specialized depending on what character you are. The wall jumping game mechanic is a feature only accessible to the Ninja Frog <strong><code>Jump Master</code></strong>.</p>
 <br>
