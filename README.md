@@ -15,7 +15,7 @@
 
 <h2 align="center" dir="auto"> Feature </h2>
 <h3 align="left" dir="auto"> Gameplay Programming </h3>
-<p dir="auto">Player movement is designed to allow the player to move <strong><code>horizontally on the x-axis</code></strong>. Utilizing the <strong><code>rigidbody2D component</code></strong> within the unity engine I crafted a player movement that can be molded to be more specialized depending on what character you are. The wall jumping game mechanic is a feature only accessible to the Ninja Frog <strong><code>Jump Master</code></strong>.</p>
+<p dir="auto"><strong><code>Player movement</code></strong> is designed to allow the player to move <strong><code>horizontally on the x-axis</code></strong>. Utilizing the <strong><code>rigidbody2D component</code></strong> within the unity engine I crafted a player movement that can be molded to be more specialized depending on what character you are. The wall jumping game mechanic is a feature only accessible to the Ninja Frog <strong><code>Jump Master</code></strong>.</p>
 <br>
 <p dir="auto"><strong><code>Wall Jumping </code></strong>gives the player the ability to <strong><code>push off of walls</code></strong>. Players will also reduce their fall speed by clinging to walls while in free fall. This feature was designed to help with precise jumping and mobility, in order to help the players to reach incredible heights.</p>
 <br>
