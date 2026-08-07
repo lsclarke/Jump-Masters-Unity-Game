@@ -10,4 +10,8 @@
 <h2 align="center" dir="auto"><strong>Genre: <code>2D Side-Scroller</code> <code>Action-Adventure</code> <code>Platformer</code></h2>
 <h2 align="center" dir="auto"><strong>Role: <code>Gameplay and UI Programming</code></h2>
 <p dir="auto">Here is my Unity Engine 6 project I have been working on called Jump Masters for over a month, Jump Masters! This was a little challenge for myself because I wanted to see how fast I can make a playable game within a short period of time. After developing and design the core game mechanics and systems. I then went on to look for aesthetically pleasing assets to help make the game look fun and interesting to play. All assets were taken from the unity asset store, but the beck-end development was all done by my in visual studio using C#. I had a lot of fun developing this project because it is a simple and straight forward platformer with the main focus of the game encouraging the player to get to the end of the goal. The game for right now has a end credits but I plan on adding more characters with different abilities depending on which character the player chooses. Its still in development and I plan on showcasing more in the future.</p>
+<br>
 
+
+<h2 align="center" dir="auto"> Player Movement </h2>
+<h2 align="center" dir="auto"><strong>Genre: <code>2D Side-Scroller</code> <code>Action-Adventure</code> <code>Platformer</code></h2>
