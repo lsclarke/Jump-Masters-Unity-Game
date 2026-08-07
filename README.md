@@ -13,5 +13,6 @@
 <br>
 
 
-<h2 align="center" dir="auto"> Player Movement </h2>
+<h2 align="center" dir="auto"> Overview </h2>
 <h2 align="center" dir="auto"><strong>Genre: <code>2D Side-Scroller</code> <code>Action-Adventure</code> <code>Platformer</code></h2>
+<h2 align="center" dir="auto"><strong>Role: <code>Gameplay and UI Programming</code></h2>
