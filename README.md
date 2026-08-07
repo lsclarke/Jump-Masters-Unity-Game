@@ -13,6 +13,7 @@
 <br>
 
 
-<h2 align="center" dir="auto"> Player Movement </h2>
+<h2 align="center" dir="auto"> Feature </h2>
+<h3 align="center" dir="auto"> Feature </h3>
 <p dir="auto">The player movement was designed to allow the player to move left and right and perform jumps to get through the various  obstacles in the game. Wall Jumping is a special feature only designed for the ninja from character, as updates will continue to be made to this project. Every character will have movement very unique to them and different features that will allow characters to have different jumping abilities</p>
 <br>
