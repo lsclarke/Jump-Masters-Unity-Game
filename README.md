@@ -30,3 +30,6 @@
 <p dir="auto">Developing an in-game user interface that provided the project with a visual indicator of the amount of points accumulated and collectables collected. 
   By design the player ui logic the game keeps real time updates on the points collected and fruits and orbs collected throughout the level for the players to see at all times.</p>
 <br>
+
+<h2 align="center" dir="auto"> Contact Information 📞</h2> 
+<p align="center" dir="auto">Contact me at <a href="mailto:lenardclarke22@gmail.com">lenardclarke22@gmail.com</a> or <a href="https://sites.google.com/view/lenardclarke/game-programming/jump-masters">My Portfolio</a> for any questions/inquiries.</p>
